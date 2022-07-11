@@ -1,0 +1,9 @@
+[Unit]
+Description=Report status for %i through Telegram
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/systemd-report-t_me.sh %i
+#User=systemd-reporter
+#Group=systemd-journal
+DynamicUser=true

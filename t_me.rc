@@ -1,0 +1,15 @@
+## t_me Init File
+# Bash source-able var=val pair 
+
+# Use @botfather to create a bot and get an API Token
+: ${T_ME_TOKEN:=.......}
+
+# Use 'curl -s -G https://api.telegram.org/bot${token}/getUpdates' to get your chat_id
+: ${T_ME_CHAT:=.......}
+
+# Force LANG for date/time format
+export LANG=it_IT.UTF-8
+export LC_TIME=$LANG
+
+# Note for my future self
+# : ${var:=val} -> eval assignment of 'val' if 'var' is not yet defined.
